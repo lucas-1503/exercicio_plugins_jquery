@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cadastro</h1>
+        </header>
+    </div>
+        <div class="formulario">
+            <form>
+                <input type="text" required placeholder="Nome completo" id="nome-completo">
+                <input type="email" required placeholder="Email" id="email">
+                <input type="tel" required placeholder="Telefone" id="telefone">
+                <input type="text" required placeholder="CPF" id="CPF">
+                <input type="text" required placeholder="Endereço completo" id="endereço">
+                <input type="text" required placeholder="CEP" id="CEP">
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="./Nova pasta/jquery.mask.min.js"></script>
+        <script>
+    
+        $('#telefone').mask('(00) 00000-0000');
+        $('#CPF').mask('000.000.000-00');
+        $('#CEP').mask('000.00-000');
+
+        
+        </script>
+</body>
+</html>
